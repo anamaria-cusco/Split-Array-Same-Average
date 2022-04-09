@@ -12,14 +12,14 @@ The length of A will be in the range [1, 30].
 A[i] will be in the range of [0, 10000].
 
 ## Solution: 
-A solution to this problem exists if and only if:
-sum*i%n==0 where sum is the sum of elements in A, n-the numbers of A's elements and i and iterator over A array
-How is this possible?
-If we want to split the A array into two sub-arrays B and C we observe that sum(Bi)/nB = sum(Ci)/nC beacause the two sub-arrays have the same average.
-If we do some more calculation we reach to the formula:
-sum(Bi)=nB*sum/n.
-How the algorithm works?
-First of all it checks if it it possible to split the array using the formula above.
-Then, generates all combinations with n/2+1 elements (if we found one sub-array the other one consist of the left elements from A (we need to stop at n/2+1 because for sure one sub-array will not contain more than n/2+1 elements).
-We compute the sum for each combination and if it is equal to the average of initial sub-array A we return True.
+A solution to this problem exists if and only if:  
+sum*i%n==0 where sum is the sum of elements in A, n-the numbers of A's elements and i and iterator over A array  
+How is this possible?  
+If we want to split the A array into two sub-arrays B and C we observe that sum(Bi)/nB = sum(Ci)/nC beacause the two sub-arrays have the same average.  
+If we do some more calculation we reach to the formula:  
+sum(Bi)=nB*sum/n.  
+How the algorithm works?  
+First of all it checks if it it possible to split the array using the formula above.  
+Then, generates all combinations with n/2+1 elements (if we found one sub-array the other one consist of the left elements from A (we need to stop at n/2+1 because for sure one sub-array will not contain more than n/2+1 elements).  
+We compute the sum for each combination and if it is equal to the average of initial sub-array A we return True.  
 
