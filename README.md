@@ -20,6 +20,6 @@ If we do some more calculation we reach to the formula:
 *sum(Bi)=nB\*sum/n*.  
 How the algorithm works?  
 First of all it checks if it it possible to split the array using the formula above.  
-Then, generates all combinations with n/2+1 elements (if we found one sub-array the other one consist of the left elements from A (we need to stop at n/2+1 because for sure one sub-array will not contain more than n/2+1 elements).  
+Then, generates all combinations up to n/2+1 elements (if we found one sub-array the other one consist of the left elements from A (we need to stop at n/2+1 because for sure one sub-array will not contain more than n/2+1 elements).  
 We compute the sum for each combination and if it is equal to the average of initial sub-array A we return True.  
 
