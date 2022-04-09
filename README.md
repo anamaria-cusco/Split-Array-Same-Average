@@ -13,7 +13,7 @@ A[i] will be in the range of [0, 10000].
 
 ## Solution: 
 A solution to this problem exists if and only if:  
-sum*i%n==0 where sum is the sum of elements in A, n-the numbers of A's elements and i and iterator over A array  
+sum\*i%n==0 where sum is the sum of elements in A, n-the numbers of A's elements and i and iterator over A array  
 How is this possible?  
 If we want to split the A array into two sub-arrays B and C we observe that sum(Bi)/nB = sum(Ci)/nC beacause the two sub-arrays have the same average.  
 If we do some more calculation we reach to the formula:  
