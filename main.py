@@ -18,11 +18,10 @@ def check_for_solution(array):
         for combo in combinations(array, i):
             mean_combo = sum(combo)/len(combo)
             if abs(mean_combo-mean)<EPSILON:
-                print(combo)
                 return True
     return False
 
 if __name__ == '__main__':
-    #array = [1,2,3,4,5,6,7,8]
-    array = [i for i in range(1,31)]
+    array = [1,2,3,4,5,6,7,8]
+    # array = [i for i in range(1,31)]
     print(check_for_solution(array))
